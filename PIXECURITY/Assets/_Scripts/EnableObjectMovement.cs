@@ -7,42 +7,64 @@ using UnityEngine.UI;
 
 public class EnableObjectMovement : MonoBehaviour
 {
-    [SerializeField] bool isActive;
-    [SerializeField] TextMeshProUGUI onOffText;
+    [SerializeField] bool activeMovement;
+    [SerializeField] bool activeRotation;
 
     ObjectManipulator manipulator;
     RotationAxisConstraint rotationAxisConstraint;
+    MoveAxisConstraint moveAxisConstraint;
 
     // Start is called before the first frame update
     void Start()
     {
         manipulator = GetComponent<ObjectManipulator>();
         rotationAxisConstraint = GetComponent<RotationAxisConstraint>();
-        //manipulator.enabled = false;
+        moveAxisConstraint = GetComponent<MoveAxisConstraint>();
+
+        activeMovement = false;
+        activeRotation = false;
+        manipulator.enabled = false;
+        rotationAxisConstraint.enabled = true;
+        moveAxisConstraint.enabled = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
-    public void MoveObject()
+    public void EnableMoveObject()
     {
-        isActive = true;
-        //manipulator.enabled = true;
-        Debug.Log("J'active le manipulateur");
-    }
-
-    public void OnAndOffText()
-    {
-        if (isActive)
+        if (!activeMovement)
         {
-            onOffText.text = "On";
+            activeMovement = true;
+            manipulator.enabled = true;
+            moveAxisConstraint.enabled = false;
+            Debug.Log("J'active le manipulateur, move object");
         }
         else
         {
-            onOffText.text = "Off";
+            activeMovement = false;
+            //manipulator.enabled = true;
+            moveAxisConstraint.enabled = true;
+            Debug.Log("Je désactive le manipulateur, stop move object");
         }
     }
+
+    public void EnableRotationObject()
+    {
+        if (!activeRotation)
+        {
+            activeRotation = true;
+            manipulator.enabled = true;
+            rotationAxisConstraint.enabled = false;
+        }
+        else
+        {
+            activeRotation= false;
+            rotationAxisConstraint.enabled= true;
+        }
+    }
+
 }
