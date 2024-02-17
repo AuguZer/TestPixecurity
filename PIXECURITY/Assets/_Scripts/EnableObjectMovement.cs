@@ -33,7 +33,6 @@ public class EnableObjectMovement : MonoBehaviour
         rotationAxisConstraint.enabled = true;
         moveAxisConstraint.enabled = true;
     }
-
     public void EnableMoveObject()
     {
         //Function that enable to move the object 
