@@ -4,7 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MRTKscene.unity
+    guid: 9d88c58ecb7031445a5bdea5f4378a73
   m_configObjects:
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 84785149287212340950407667031dd3, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: af186cf9f6d10bc40872c4a63b228506, type: 2}

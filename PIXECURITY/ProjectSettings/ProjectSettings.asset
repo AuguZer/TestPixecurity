@@ -134,7 +134,10 @@ PlayerSettings:
   vulkanEnableCommandBufferRecycling: 1
   loadStoreDebugModeEnabled: 0
   bundleVersion: 0.1
-  preloadedAssets: []
+  preloadedAssets:
+  - {fileID: 1152781703407378243, guid: af186cf9f6d10bc40872c4a63b228506, type: 2}
+  - {fileID: 11400000, guid: 84785149287212340950407667031dd3, type: 2}
+  - {fileID: -8864554138817029702, guid: b8136bf82249ac6419c3f01defed0320, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -672,11 +675,11 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   metroPackageName: PIXECURITY
   metroPackageVersion: 1.0.0.0
-  metroCertificatePath: 
+  metroCertificatePath: Assets/WSATestCertificate.pfx
   metroCertificatePassword: 
-  metroCertificateSubject: 
-  metroCertificateIssuer: 
-  metroCertificateNotAfter: 0000000000000000
+  metroCertificateSubject: DefaultCompany
+  metroCertificateIssuer: DefaultCompany
+  metroCertificateNotAfter: 00501ba8c080db01
   metroApplicationDescription: PIXECURITY
   wsaImages: {}
   metroTileShortName: PIXECURITY
@@ -694,8 +697,8 @@ PlayerSettings:
   platformCapabilities:
     WindowsStoreApps:
       SpatialPerception: True
-      Microphone: True
       InternetClient: True
+      Microphone: True
   metroTargetDeviceFamilies: {}
   metroFTAName: 
   metroFTAFileTypes: []
