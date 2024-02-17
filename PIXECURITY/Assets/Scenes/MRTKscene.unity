@@ -1029,6 +1029,18 @@ PrefabInstance:
       propertyPath: iconQuadTexture
       value: 
       objectReference: {fileID: 2800000, guid: 4494cfaf424cdde49895b91e2b559258, type: 3}
+    - target: {fileID: 8791016259677743924, guid: 13bc3ed0d875d644982635210bd468ec, type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1588332020}
+    - target: {fileID: 8791016259677743924, guid: 13bc3ed0d875d644982635210bd468ec, type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MoveObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 8791016259677743924, guid: 13bc3ed0d875d644982635210bd468ec, type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: EnableObjectMovement, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 8976853993531362229, guid: 13bc3ed0d875d644982635210bd468ec, type: 3}
       propertyPath: m_Name
       value: NearMenu3x1 Variant
