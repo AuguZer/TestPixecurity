@@ -4,15 +4,10 @@ using UnityEngine;
 
 public class Cam : MonoBehaviour
 {
-    // Start is called before the first frame update
+    //This script set the Main Camera's near clip plan to its minimum so the user can look closer at objects 
     void Start()
     {
+       
         Camera.main.nearClipPlane = 0.01f;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

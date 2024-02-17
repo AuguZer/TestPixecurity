@@ -7,7 +7,6 @@ public class OnOffButton : MonoBehaviour
 {
     TextMeshPro onOffText;
     [SerializeField] bool isOn;
-    // Start is called before the first frame update
     void Start()
     {
         //Getting the TextMeshPro component
@@ -17,15 +16,9 @@ public class OnOffButton : MonoBehaviour
         onOffText.text = "Off";
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     public void OnOffTextSwitch()
     {
-        //This function is called OnClick and permits to display the text if the mode is On or Off
+        //This function is called OnClick and permits to display the text if the mode (Move/Rotate) is On or Off
         if (!isOn)
         {
             isOn = true;

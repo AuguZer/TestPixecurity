@@ -14,7 +14,6 @@ public class EnableObjectMovement : MonoBehaviour
     RotationAxisConstraint rotationAxisConstraint;
     MoveAxisConstraint moveAxisConstraint;
 
-    // Start is called before the first frame update
     void Start()
     {
         //Getting all the component we need
@@ -33,12 +32,6 @@ public class EnableObjectMovement : MonoBehaviour
         //Freezing the object so the user needs to click on a button to disable those constraints
         rotationAxisConstraint.enabled = true;
         moveAxisConstraint.enabled = true;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 
     public void EnableMoveObject()
